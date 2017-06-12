@@ -16,15 +16,17 @@ app/
   components/
    App/
     App.jsx
-    App.css
+   RouteWithSubRoutes/
+    RouteWithSubRoutes.js
   containers
-    ExampleContainer/
-     ExampleContainer.jsx
-     ExampleContainer.css
+   ExampleContainer/
+    ExampleContainer.jsx
+    ExampleContainer.css
   reducers/
    index.js
   index.html
   index.js
+  routes.js
 .babelrc
 package.json
 README.md
