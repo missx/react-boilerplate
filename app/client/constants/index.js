@@ -1,0 +1,1 @@
+/* File for adding constans to be used in the projects */

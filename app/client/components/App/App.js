@@ -1,22 +1,17 @@
 import React from 'react';
-import { 
-	BrowserRouter as Router, Route
-} from 'react-router-dom';
+import { Link, Fragment } from 'redux-little-router';
 
-import RouteWithSubRoutes from '../RouteWithSubRoutes/RouteWithSubRoutes';
-import { routes } from '../../routes.js';
+import ContainerExample from '../../containers/ContainerExample/ContainerExample';
 
 class App extends React.Component {
 
 	render() {
 		return (
-			<Router>
-				<div>
-					{routes.map((route, i) => (
-						<RouteWithSubRoutes key={i} {...route}/>
-					))}
-				</div>
-			</Router>
+			<div>
+				<h1>React Boilerplate</h1>
+				<Link href="/container">Click here to go to the example container</Link>
+				<Fragment forRoute="/container"><ContainerExample/></Fragment>
+			</div>
 		);
 	}
 }
