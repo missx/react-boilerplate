@@ -10,7 +10,7 @@ class App extends React.Component {
 			<div>
 				<h1>React Boilerplate</h1>
 				<Link href="/container">Click here to go to the example container</Link>
-				<Fragment forRoute="/container"><ContainerExample/></Fragment>
+				<Fragment forRoute="/container"><ContainerExample text="You are ready to start developing!"/></Fragment>
 			</div>
 		);
 	}

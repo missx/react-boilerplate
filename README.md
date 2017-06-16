@@ -8,10 +8,21 @@ After running npm install you can start the app by running 'npm run start' with 
 * **React** - https://facebook.github.io/react/
 * **React-dom** - https://facebook.github.io/react/
 * **Redux** - http://redux.js.org/
-* **Prop Types** - https://www.npmjs.com/package/prop-types
-* **Redux Little Router** - https://github.com/FormidableLabs/redux-little-router
+* **prop-types** - https://www.npmjs.com/package/prop-types
+* **redux-little-router** - https://github.com/FormidableLabs/redux-little-router
 * **Webpack** - https://webpack.js.org/
 * **Babel** - https://babeljs.io/
+  * **babel-core**
+  * **babel-jest**
+  * **babel-loader**
+  * **babel-preset-es2015**
+  * **babel-preset-react**
+* **Jest** - http://facebook.github.io/jest/
+* **react-test-renderer** - https://www.npmjs.com/package/react-test-renderer
+* **Enzyme** - http://airbnb.io/enzyme/
+  * **jest-enzyme** 
+* **redux-mock-store** - https://www.npmjs.com/package/redux-mock-store
+
 
 ## App Structure
 
@@ -25,12 +36,13 @@ app/
    img
   components/
    App/
-    App.jsx
+    App.js
    RouteWithSubRoutes/
     RouteWithSubRoutes.js
   containers
    ExampleContainer/
-    ExampleContainer.jsx
+    ExampleContainer.js
+    ExampleContainer.spec.js
     ExampleContainer.css
   reducers/
    index.js
@@ -43,3 +55,18 @@ README.md
 webpack.config.js
 
 ```
+
+## Testing
+
+We are using Jest for unit testing. Jest is a Node-based test runner, it is intended to be used for unit tests of your logic and your components.
+
+Read about how it works and how to use it here: 
+http://facebook.github.io/jest/
+
+We also use Enzyme, which is "a JavaScript Testing utility for React that makes it easier to assert, manipulate, and traverse your React Components' output." 
+
+Here you can find how to use it:
+http://airbnb.io/enzyme/
+
+Tests are created inside the component's folder and their name should follow this structure: _[Component name].spec.js_
+
