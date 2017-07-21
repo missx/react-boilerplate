@@ -1,6 +1,8 @@
 import React from 'react';
 import { Fragment } from 'redux-little-router';
 
+import styles from './ContainerExampleStyle';
+
 class ContainerExample extends React.Component {
 
 	constructor(props) {
@@ -9,7 +11,7 @@ class ContainerExample extends React.Component {
 
 	render() {
 		return (
-			<div className="align">
+			<div style={styles.align}>
 				<h1>{this.props.text}</h1>
 			</div>
 		);
