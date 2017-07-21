@@ -1,3 +1,4 @@
+import React from 'react';
 import ReactDOM from 'react-dom';
 import { 
 	combineReducers, 
@@ -6,11 +7,10 @@ import {
 	applyMiddleware 
 } from 'redux';
 import { routerForBrowser } from 'redux-little-router';
+import { Provider } from 'react-redux';
 
 import { routes } from './routes.js';
 import customReducer from './reducers/reducer';
-
-import wrap from './components/Wrap/Wrap.js';
 import App from './components/App/App.js';
 
 const {
@@ -32,6 +32,8 @@ const store = createStore(
 );
 
 ReactDOM.render(
-    wrap(store)(App),
+    <Provider store={store}>
+        <App />
+    </Provider>,
     document.getElementById('root')
 );

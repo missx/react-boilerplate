@@ -6,10 +6,10 @@
   "scripts": {
     "build:dev": "npm run clean:dist && webpack --env=dev --progress --profile --colors",
     "build:prod": "npm run clean:dist && webpack --env=prod --progress --profile --colors",
-	"build": "npm run build:dev",
+    "build": "npm run build:dev",
     "clean:dist": "rimraf -- dist",
-	"start": "webpack-dev-server --env=dev",
-	"test": "jest",
+    "start": "webpack-dev-server --env=dev",
+    "test": "jest",
     "test:watch": "npm run test -- --watch"
   },
   "author": "",
@@ -39,7 +39,7 @@
     "react-dom": "^15.5.4",
     "react-redux": "^5.0.5",
     "redux": "^3.6.0",
-    "redux-little-router": "^13.2.0"
+    "redux-little-router": "^14.2.0"
   },
   "jest": {
     "setupTestFrameworkScriptFile": "./node_modules/jest-enzyme/lib/index.js",
