@@ -28,6 +28,11 @@ React application boilerplate. Redux added to integrate with React. Uses webpack
   * **babel-loader**
   * **babel-preset-es2015**
   * **babel-preset-react**
+* **Eslint** - http://eslint.org/
+  * **eslint-config-standard**
+  * **eslint-loader**
+  * **eslint-plugin-node**
+  * **eslint-plugin-react**
 * **Jest** - http://facebook.github.io/jest/
 * **react-test-renderer** - https://www.npmjs.com/package/react-test-renderer
 * **Enzyme** - http://airbnb.io/enzyme/
@@ -65,6 +70,7 @@ app/
 |--dist/
 |--node_modules/
 |--.babelrc
+|--.eslintrc.json
 |--.gitignore
 |--package.json
 |--README.md
