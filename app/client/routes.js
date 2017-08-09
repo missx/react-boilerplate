@@ -1,8 +1,8 @@
 export const routes = {
-    '/': {
-        title: 'Home'
-    },
-    '/container': {
-        title: 'Container'
-    }
+	'/': {
+		title: 'Home'
+	},
+	'/container': {
+		title: 'Container'
+	}
 }

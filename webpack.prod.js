@@ -22,7 +22,13 @@ module.exports = {
              */
             { 
                 test: /\.(js|jsx)$/,
-                use: 'babel-loader'
+                exclude: /node_modules/,
+                use: ['babel-loader', 'eslint-loader']
+            },
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                loader: 'eslint-loader'
             },
             /**
              * Extract and compile css files to external CSS file

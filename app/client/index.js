@@ -26,14 +26,14 @@ const store = createStore(
 	combineReducers({ router: reducer, customReducer }),
 	{},
 	compose(enhancer, 
-        applyMiddleware(middleware),
-        window.devToolsExtension ?
-            window.devToolsExtension() : f => f)
+		applyMiddleware(middleware),
+		window.devToolsExtension ?
+			window.devToolsExtension() : f => f)
 );
 
 ReactDOM.render(
-    <Provider store={store}>
-        <App />
-    </Provider>,
-    document.getElementById('root')
+	<Provider store={store}>
+		<App />
+	</Provider>,
+	document.getElementById('root')
 );

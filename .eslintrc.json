@@ -1,0 +1,31 @@
+{
+    "parser": "babel-eslint",
+    "plugins": [
+        "react"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "env": {
+        "es6":     true,
+        "browser": true,
+        "node":    true,
+        "mocha":   true
+    },   
+    "extends": [
+        "eslint:recommended", 
+        "plugin:react/recommended"
+    ],    
+    "rules": {
+        "indent": ["warn", "tab"],
+        "react/no-multi-comp": ["error"],
+        "react/prefer-es6-class": ["error", "always"],
+        "react/jsx-wrap-multilines": ["error"],
+        "react/prop-types": ["warn"],
+        "react/no-direct-mutation-state": ["error"]
+    }
+}

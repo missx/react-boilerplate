@@ -1,5 +1,5 @@
 import React from 'react';
-import { Fragment } from 'redux-little-router';
+import PropTypes from 'prop-types';
 
 import styles from './ContainerExampleStyle';
 
@@ -16,6 +16,10 @@ class ContainerExample extends React.Component {
 			</div>
 		);
 	}
+}
+
+ContainerExample.propTypes = {
+	text: PropTypes.string.isRequired
 }
 
 export default ContainerExample;

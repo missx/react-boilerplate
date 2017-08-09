@@ -1,7 +1,7 @@
 const styles = {
-    align: {
-        textAlign: "center"
-    }
+	align: {
+		textAlign: "center"
+	}
 }
 
 export default styles;
